@@ -59,8 +59,9 @@ background-color: blue;
 } */
 
 .wrapper div {
-  border: solid black 1px;
+  border-bottom: solid, black, 1px;
 }
+
 
 .title {
   grid-area: tt;
@@ -81,11 +82,12 @@ background-color: blue;
 .content {
   grid-area: ct;
   padding: 20px;
+  background-color: rgb(41, 128, 185)
 }
 
 .media {
-  border: 2px solid #f76707;
-  border-radius: 5px;
+  /* border: 2px solid #f76707;
+  border-radius: 5px; */
   background-color: #fff46e6;
   max-width: 800px;
 }
