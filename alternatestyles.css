@@ -67,7 +67,7 @@ background-color: blue;
   grid-area: tt;
   /* justify-self: center;
    align-self: center; */
-   background-color: rgb(28, 40, 51);
+   background-color: rgb(44, 62, 80);
    color: white;
 
 
@@ -75,7 +75,7 @@ background-color: blue;
 
 .header {
   grid-area: hd;
-  background-color: rgb(28, 40, 51);
+  background-color: rgb(44, 62, 80);
   color: white;
 }
 
@@ -83,13 +83,25 @@ background-color: blue;
 
 .sidebar {
   grid-area: sd;
+  background-color: rgb(255,255,255);
+  margin-top: 10vh;
+  border: 1px solid black;
+  border-radius: 5px;
 
 }
+
+.sidebartext {
+  margin-top: 10vh;
+  margin-left: 1vw;
+}
+
+
+
 
 .content {
   grid-area: ct;
   padding: 20px;
-  background-color: rgb(41, 128, 185)
+  background-color: white;
 }
 
 .media {
@@ -104,7 +116,13 @@ background-color: blue;
   grid-template-columns: 1fr 3fr;
   grid-template-areas: "img content";
   margin-bottom: 1em;
+  margin-top:75px;
 }
+
+/* .media-flipped {
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "content img";
+} */
 
 .media .image {
   grid-area: img;
@@ -120,14 +138,16 @@ background-color: blue;
 
 .footer {
   grid-area: ft;
+  background-color: rgb(44, 62, 80);
+  color: white;
 }
 
 @media screen and (min-width: 736px)
 {
   .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 75px 75px 80vh 80vh 200px;
+    grid-template-columns: 1.25fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 75px 80vh 80vh 20vh;
     grid-template-areas:
     "tt tt tt tt"
     "hd hd hd hd"
@@ -135,9 +155,17 @@ background-color: blue;
     "sd ct ct ct"
     "ft ft ft ft";
       grid-gap: 1px;
-      margin-left: 5vw;
-      margin-right: 5vw;
+      margin-left: 2vw;
+      margin-right: 2vw;
       margin-top: 1vw;
   }
+
+  /* TODO: link sidebar to sidebar to text */
+  /* TODO: improve color and font of sidebar */
+  /* TODO: invert alternate images */
+  /* TODO: create collapsing text columns */
+  /* TODO: use consistent color properties rgb% */
+  /* TODO: can the media queries be more discriminating? */
+/* TODO: footer overlies media object on laptop view but not large screen */
 
 }
